@@ -10,12 +10,12 @@ build-job:
     - npm run build
   artifacts:
     paths:
-      - "build/"
+      - "www/"
 
 pages:
   stage: deploy 
   script:
-    - mv build/ public/
+    - mv www/ public/
   artifacts:
     paths:
       - "public/"
