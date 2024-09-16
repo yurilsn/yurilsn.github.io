@@ -4,7 +4,7 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'ionic-deep-link-lab/tabs',
+    path: 'tabs',
     component: TabsPage,
     children: [
       {
@@ -28,7 +28,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'ionic-deep-link-lab/tabs/tab1',
+    redirectTo: '/tabs/tab1',
     pathMatch: 'full'
   }
 ];
