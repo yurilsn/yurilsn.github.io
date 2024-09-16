@@ -15,7 +15,7 @@ export class AppComponent {
   initializeApp(){
     App.addListener('appUrlOpen', (event: URLOpenListenerEvent) => {
       this.zone.run(() => {
-        const domain = '127.0.0.1:8100'
+        const domain = 'ionic-deeplink-lab-1ccd0a.gitlab.io'
         const pathArray = event.url.split(domain)
         
         const appPath = pathArray.pop();
